@@ -2514,7 +2514,7 @@
             const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
             
             // افتح في نافذة جديدة
-            window.open(whatsappURL, '_blank');
+            window.location.href = whatsappURL;
             
             // عرض إشعار
             showWhatsAppNotification("عام");
