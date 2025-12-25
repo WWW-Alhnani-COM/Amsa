@@ -205,36 +205,56 @@
       }
     },
     {
-      "@type": "Service",
-      "name": "إدارة المحافظ الاستثمارية",
-      "description": "إدارة محافظ استثمارية متنوعة تحقق عوائد تنافسية مع إدارة متكاملة للمخاطر",
+      "@type": "FinancialService",
+      "name": "مجموعة امسا الدولية القابضة",
+      "description": "خدمات استثمارية وعروض تصل إلى 35% ربح",
+      "url": "https://amsa.business/",
       "provider": {
         "@id": "https://amsa.business/#organization"
       },
-      "areaServed": "SA",
+      "feesAndCommissionsSpecification": "https://amsa.business/#offers",
+      "areaServed": {
+        "@type": "Country",
+        "name": "SA"
+      },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "خدمات الاستثمار",
+        "name": "عروض الاستثمار الحصرية",
         "itemListElement": [
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "الاستثمار العقاري"
+              "name": "الاستثمار العقاري والذهبي"
             },
-            "price": "1000",
-            "priceCurrency": "SAR"
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "الاستثمار في الذهب"
-            },
-            "price": "1000",
-            "priceCurrency": "SAR"
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "1000",
+              "priceCurrency": "SAR"
+            }
           }
         ]
+      },
+      "potentialAction": {
+        "@type": "CommunicateAction",
+        "name": "تواصل عبر الواتساب للاستثمار",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://wa.me/966552425251?text=أريد الاستفسار عن الاستثمار مع امسا",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/IOSPlatform",
+            "http://schema.org/AndroidPlatform"
+          ]
+        },
+        "expectsAcceptanceOf": {
+          "@type": "Offer",
+          "name": "استشارة استثمارية مجانية",
+          "description": "احصل على تحليل استثماري مجاني مع متخصص",
+          "price": "0",
+          "priceCurrency": "SAR",
+          "availability": "https://schema.org/InStock"
+        }
       }
     },
     {
@@ -267,30 +287,36 @@
       ]
     },
     {
-      "@type": "FinancialService",
-      "name": "مجموعة امسا الدولية القابضة",
-      "description": "خدمات استثمارية وعروض تصل إلى 35% ربح",
-      "url": "https://amsa.business/",
+      "@type": "Service",
+      "name": "إدارة المحافظ الاستثمارية",
+      "description": "إدارة محافظ استثمارية متنوعة تحقق عوائد تنافسية مع إدارة متكاملة للمخاطر",
       "provider": {
         "@id": "https://amsa.business/#organization"
       },
-      "feesAndCommissionsSpecification": "https://amsa.business/#offers",
-      "potentialAction": {
-        "@type": "CommunicateAction",
-        "name": "تواصل عبر الواتساب للاستثمار",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://wa.me/966552425251?text=أريد الاستفسار عن الاستثمار مع امسا",
-          "actionPlatform": [
-            "http://schema.org/DesktopWebPlatform",
-            "http://schema.org/IOSPlatform",
-            "http://schema.org/AndroidPlatform"
-          ]
-        },
-        "expectsAcceptanceOf": {
-          "@type": "Offer",
-          "name": "استشارة استثمارية مجانية"
-        }
+      "areaServed": "SA",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "خدمات الاستثمار",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "الاستثمار العقاري"
+            },
+            "price": "1000",
+            "priceCurrency": "SAR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "الاستثمار في الذهب"
+            },
+            "price": "1000",
+            "priceCurrency": "SAR"
+          }
+        ]
       }
     },
     {
@@ -343,8 +369,7 @@
     }
   ]
 }
-</script>
-<meta property="og:type" content="website">
+</script><meta property="og:type" content="website">
 <meta property="og:url" content="https://amsa.business/">
 <meta property="og:image" content="amsa-logo@4x.png">
     <!-- البيانات المنظمة (Schema Markup) لتحسين ظهور النتائج -->
