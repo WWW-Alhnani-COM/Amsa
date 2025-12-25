@@ -70,9 +70,6 @@
 <!-- Open Graph Tags لوسائل التواصل -->
 <meta property="og:title" content="مجموعة امسا الدولية القابضة - استثمار مضمون بعوائد تنافسية">
 <meta property="og:description" content="استثمر مع مجموعة امسا الدولية القابضة واحصل على أرباح يومية موثقة في الاستثمار العقاري والذهبي">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://amsa.business/">
-<meta property="og:image" content="amsa-logo@4x.png">
     <!-- البيانات المنظمة (Schema Markup) لتحسين ظهور النتائج -->
 <script type="application/ld+json">
 {
@@ -94,6 +91,7 @@
       "foundingDate": "2010",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "حي المالية، برج المملكة، الطابق 40",
         "addressLocality": "الرياض",
         "addressRegion": "منطقة الرياض",
         "addressCountry": "SA",
@@ -156,6 +154,57 @@
       "inLanguage": "ar"
     },
     {
+      "@type": "AboutPage",
+      "name": "من نحن - مجموعة امسا الدولية القابضة",
+      "description": "تعرف على مجموعة امسا الدولية القابضة، شركة استثمارية سعودية مرخصة",
+      "url": "https://amsa.business/#about",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "الرئيسية",
+            "item": "https://amsa.business/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "من نحن",
+            "item": "https://amsa.business/#about"
+          }
+        ]
+      },
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "مجموعة امسا الدولية القابضة",
+        "description": "شركة استثمارية سعودية مرخصة"
+      }
+    },
+    {
+      "@type": "ContactPage",
+      "name": "اتصل بنا - مجموعة امسا الدولية القابضة",
+      "description": "تواصل مع مجموعة امسا الدولية القابضة للاستفسار عن الاستثمار والعروض",
+      "url": "https://amsa.business/#contact",
+      "mainEntity": {
+        "@type": "Organization",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+966552425251",
+          "contactType": "استشارة استثمارية",
+          "contactOption": "https://schema.org/TollFree",
+          "areaServed": "SA",
+          "availableLanguage": "Arabic",
+          "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        }
+      }
+    },
+    {
       "@type": "Service",
       "name": "إدارة المحافظ الاستثمارية",
       "description": "إدارة محافظ استثمارية متنوعة تحقق عوائد تنافسية مع إدارة متكاملة للمخاطر",
@@ -216,10 +265,89 @@
           "item": "https://amsa.business/#contact"
         }
       ]
+    },
+    {
+      "@type": "FinancialService",
+      "name": "مجموعة امسا الدولية القابضة",
+      "description": "خدمات استثمارية وعروض تصل إلى 35% ربح",
+      "url": "https://amsa.business/",
+      "provider": {
+        "@id": "https://amsa.business/#organization"
+      },
+      "feesAndCommissionsSpecification": "https://amsa.business/#offers",
+      "potentialAction": {
+        "@type": "CommunicateAction",
+        "name": "تواصل عبر الواتساب للاستثمار",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://wa.me/966552425251?text=أريد الاستفسار عن الاستثمار مع امسا",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/IOSPlatform",
+            "http://schema.org/AndroidPlatform"
+          ]
+        },
+        "expectsAcceptanceOf": {
+          "@type": "Offer",
+          "name": "استشارة استثمارية مجانية"
+        }
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "العرض الاستثماري 1000 ﷼",
+      "description": "استثمار 1000 ﷼ بعائد يصل إلى 35% لمدة شهرين",
+      "price": "1000",
+      "priceCurrency": "SAR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://amsa.business/#offers",
+      "seller": {
+        "@id": "https://amsa.business/#organization"
+      },
+      "itemOffered": {
+        "@type": "Service",
+        "name": "استثمار عقاري وذهبي"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "العرض الاستثماري 5000 ﷼",
+      "description": "استثمار 5000 ﷼ بعائد يصل إلى 35% لمدة شهرين",
+      "price": "5000",
+      "priceCurrency": "SAR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://amsa.business/#offers",
+      "seller": {
+        "@id": "https://amsa.business/#organization"
+      },
+      "itemOffered": {
+        "@type": "Service",
+        "name": "استثمار عقاري وذهبي"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "العرض الاستثماري 10000 ﷼",
+      "description": "استثمار 10000 ﷼ بعائد يصل إلى 35% لمدة شهرين - العرض المميز",
+      "price": "10000",
+      "priceCurrency": "SAR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://amsa.business/#offers",
+      "seller": {
+        "@id": "https://amsa.business/#organization"
+      },
+      "itemOffered": {
+        "@type": "Service",
+        "name": "استثمار عقاري وذهبي"
+      }
     }
   ]
 }
 </script>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://amsa.business/">
+<meta property="og:image" content="amsa-logo@4x.png">
+    <!-- البيانات المنظمة (Schema Markup) لتحسين ظهور النتائج -->
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
